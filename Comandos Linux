@@ -1,0 +1,107 @@
+Comandos Linux
+ls -> lista todas as pastas ; 
+mkdir -> cria uma nova pasta ;
+cd \ -> leva pra base dos diretórios ;
+cd .. -> volta um diretório;
+clear -> limpa o terminal ; "CTRL + L" limpa a tela" ;
+echo "nome do arquivo" > "nome do arquivo com sua extensão" -> cria um arquivo exemplo: echo hello > hello.txt ; 
+del "nome da pasta" -> deleta apenas os arquivos dentro da pasta e não ela mesma; 
+Tecla de atalho "Seta pra cima" -> volta os comandos no terminal ; 
+rm -rf "nome da pasta" -> deleta a pasta e todos os arquivos dentro dela;  
+ip a -> esse comando mostra todos os endereços ips disponíveis no computador.
+~$ -> è a pasta do usuário, usuário comum, é restringido algumas funções.
+# -> é um super usuário ou root(raíz);
+date -> exibe a data atual e a hora; 
+pwd -> mostra o caminho que você está; 
+/ -> diretório raíz;
+../"nome do diretório" -> voltar e abrir um diretório logo em seguida ;
+ls | more -> lista os itens com uma opção de "mais" para ir clicando em enter para ver mais arquivos;
+Ctrl c -> sai de um comando;
+ls "nome do arquivo" -> lista apenas o arquivo descrito; 
+ls "inicial"* -> mostra todos os arquivos com esssa inicial; 
+ls m?g* -> exemplo de filtro no linux, primeira letra m, segunda letra qualquer, terceira letra g, e * para ajudar listar;
+touch "nome-do-aquivo.txt" -> cria um arquivo;
+cd ~ -> chega mais rápido a pasta do usuário;
+ls arquivo[1-3]* -> exemplo de listagem, no exemplo se lista os arquivos que se chamam arquivos com os numeros de 1 a 3, pode se também definir a extensão, ou apenas usar o *, para pegar todos de 1 a 3;
+ls arquivo[2,5]* -> nesse exemplo se lista apenas o arquivo 2 e 5;
+ls arquivo[^2,5]* -> nesse exemplo o sinal ^ exclui, então não lista nem o número dois nem o 5;
+ls arquivo[^3-5]* -> nesse exemplo não vai listar do número 3 ao 5;
+
+ls /"nome-da-pasta" -> lista os arquivos que estão naquela pasta após o /;
+find -name "nome-do-arquivo -> comando para buscar arquivos diretamente no diretório.
+rmdir "nome-da-pasta" -> exclui a pasta caso ela esteja vazia esse comando funcionará;
+rm -> remove arquivos;
+obs: "Eu não posso excluir um diretório estando dentro dele;
+,cat /etc/group -> local onde ficam listados todos os grupos do sistema; 
+
+sudo passwd root -> Para cadastrar nova senha para o super usuário root;
+su -> para entrar no super usuário;
+su "nome-do-usuário" -> para retornar para o usuário;
+
+SSH é o serviço de acesso remoto;
+cat -> mostra o conteúdo de um arquivo texto.
+nano /etc/ssh/sshd/_config
+editores de texto "vi" e "nano";
+history -> lista os comandos que o usuário utilizou;
+! + "indice do histórico" -> colocando exclamação mais o indice do histórico se pode navegar pelos comandos utilizados anteriormente;
+!! + "indice do ultimo comando" -> para utilizar o ultimo comando;
+!? + "inicio, ou começo do comando" +  ? -> comando para buscar, pesquisar algum comando;
+history | grep * -> para buscar um termo ou um comando específico;
+
+
+Para consultar variaveis de ambiente se utiliza o comando "export":
+exemplo = export HISTTIMEFORMAT="%C"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

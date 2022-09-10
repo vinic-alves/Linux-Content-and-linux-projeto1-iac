@@ -1,0 +1,49 @@
+Criei a pasta scripts2
+depois criei um arquivo com o nano com esse comando: nano script-iac2.sh
+o nano cria o arquivo já abrindo ele no terminal
+
+Dentro do arquivo de texto do terminal escreva:
+
+#!/bin/bash
+
+echo "Atualizando o servidor"
+
+apt-get update
+apt-get upgrade -y
+apt-get install apache2 -y
+apt-get install unzip -y
+
+echo "baixando e copiando os arquivos da aplicação"
+
+cd /tmp
+wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+unzip main.zip
+cd linux-site-dio-main
+cp -R * /var/www/html/
+
+
+salva com ctrl + o depois sai com ctrl+ x
+
+após criar o arquivo precisamos permitir que ele seja executado, digitamos o seguinte script:
+chmod +x script-ia2.sh
+
+após esse comando repare que a cor do arquivo se altera;
+após isso execute o arquivo:
+./script-ia2.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

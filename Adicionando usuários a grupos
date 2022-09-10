@@ -1,0 +1,6 @@
+Adicionado usuários a grupos:
+checando os grupos que temos no sistema:
+cat /etc/group -> checa os grupos que temos no sistema;
+usermod -G adm,sudo mariana -> comando para adicionar um usuário a uma lista(gropo de administradores, que podem
+realizar funções especificas no sistema); 
+

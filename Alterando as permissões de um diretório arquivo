@@ -1,0 +1,16 @@
+Alterando as permissões de um diretório arquivo
+
+Esquema:
+leitura(R)  -> 4
+gravação(W) -> 2
+execução(X) -> 1
+nenhuma     -> 0
+
+Exemplo de permissão para o dono:
+chmod 750 /adm/ -> da esquerda para direita, 7 permissão total para o dono,
+para o grupo, somente execução e leitura 4 + 1 = 5 e os demais 0, ou seja nenhuma permissão, no exemplo essa configuração vale para pasta /adm que está na home.
+
+chmod 744 date.sh -> exemplo de mudança de permissões de um arquivo de script. 
+chmod +x "nome-do-arquivo" -> adicionando permissão de execução para o dono; 
+
+

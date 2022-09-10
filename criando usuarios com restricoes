@@ -1,0 +1,16 @@
+Criando usuários com restrições especificas e configurações especificas:
+
+1-> Criando um usuário que terá acesso até uma data:
+prazo = 1 dias para pode acessar o servidor;
+
+useradd -e -> especifica a data de duração da "conta", de senha e etc;
+exemplo abaixo
+    useradd guest -c "Convidado" -m -e 07/08/2022
+usermod "nome-do-usuário" -> realiza alterações no nome do usuário;
+cat /etc/passwd -> comando para visualizar todas as informações dos usuários criados;
+-s /bin/bash -> para acrescentar o shell utiliza-se após o comando useradd;
+
+criando um usuário já com a senha "Encrypitada" :
+exemplo:
+    useradd convidado1 -c "Convidado especial" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+

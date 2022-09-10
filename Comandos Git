@@ -1,0 +1,1 @@
+openssl sha1 "nome-do-arquivo" -> cria a chave do sha1 para o meu arquivo;

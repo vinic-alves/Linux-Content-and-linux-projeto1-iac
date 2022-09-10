@@ -1,0 +1,1 @@
+systemctl status apache2 -> verifica o status do apache, se está rodando ou não.

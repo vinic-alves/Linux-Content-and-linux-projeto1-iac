@@ -1,0 +1,18 @@
+Criando seus próprios grupos com permissões especificas:
+
+groupadd "nome-do-grupo" -> Comando para criação de grupos;
+groupdel "nome-do-grupo" -> esse comando deleta um grupo criado.
+
+Exemplo de criação de usuário com adição em um grupo de maneira direta:
+ 
+root@vinicius-Q464B:/# useradd rodrigo -c "Rodrigo Silva" -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G  GRP_cADM
+
+dessa forma criamos os usuários já definindo um grupo específico para ele, o qual daremos permissões especificas de acordo com o grupo. 
+
+Adicionando um usuário existente a um grupo já existente: 
+exemplo: usermod -G GRP_VEN joao                        -> nesse exemplo se coloca o nome do grupo antes do nome do usuário que queremos adicionar, se já pertencer a um grupo, esse comando irá trocar esse usuário de grupo, não adicionar.
+ 
+
+gpasswd -d "nome-do-usuário" "grupo que vamos retirar o usuário" -> esse comando retira o usuário de um grupo especifico.
+ exemplo: gpasswd -d mariana sudo -> Esse comando foi retirado do grupo sudo o usuário mariana;
+

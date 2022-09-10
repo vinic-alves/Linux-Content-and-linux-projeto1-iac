@@ -1,0 +1,48 @@
+Gerenciamento de discos Linux
+
+lsblk -> verifica os discos disponíveis no sistema;
+fdisk -l -> Para listar os discos do sistema de maneira mais detalhada;
+formatando o disco para utilização:
+mkfs.ext3 + "Caminho do disco "-> exemplo para formatar o disco com o file system do linux.
+
+como utilizar o disco criado/adicionado:
+geralmente se monta os discos no diretório que fica na raíz, chamado mnt;
+para montar o disco se cria um diretório dentro dessa pasta mnt(que está na raíz);
+
+mount /dev/sdb /mnt/disco2/ -> exemplo de criação do disco, comando mount mais o caminho do disco, depois se indica a pasta de destino;
+
+umount /dev/sdb -> exemplo de comando para desmontar arquivos;
+se montar os discos igual no exemplo acima, quando o computador for reiniciado, terá que montar o disco novamente;
+
+Montando discos automaticamente
+lsblk -> verifica em qual diretório o disco foi montado; 
+se formata com o editor de video a pasta /etc/fstab
+exemplo:
+    /dev/sdb/disk2 ext4 defaults 00 -> se adiciona a configuração do disco na pasta acima;
+após isso se salva o arquivo de texto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

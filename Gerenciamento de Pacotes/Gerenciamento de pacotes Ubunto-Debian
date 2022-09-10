@@ -1,0 +1,35 @@
+apt-get -> gerenciador de pacotes mais baixo nivel, não muito amigável com o usuário, não gera tantas informações sobre sua instalação.
+apt -> mais amigável com o usuário, mostra as informações mais detalhadas que o get.
+apt search "nome-do-programa" -> procura o nome do programa, no desktop;
+ip a -> mostra o ip da máquina; 
+ifconfig -> com o software net-tools instalado, o ifconfig também serve para verificar o ip da máquina;
+unzip "nome do arquivo zipado" -> descompacta um arquivo compactado;
+-y -> remove ou instala algum programa sem perguntar, ou aparecer prompt de confirmação;
+apt edit-sources -> mostra todos os repositórios ubunto disponíveis, e se quiser adicionar algum que não esteja disponível, é só editar o arquivo que irá se abrir, adicionando o endereço desse repositório;
+
+Sistema Red hat:
+dnf -> atualização: User Friendly;
+yum -> atualização;
+para instalar arquivos pelo terminal é escrever apt install ./nomedoarquivo.deb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

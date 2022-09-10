@@ -1,0 +1,64 @@
+cp -> comando para copiar arquivos;
+exemplo:
+ cp /home/vinicius/nome-do-arquivo.txt /disk2/ -> local de origen para local de destino, por padrão o ubuntu não notifica o usuário de cópia;
+
+Exemplo de cópia de todos os arquivos:
+    cp /home/vinicius/*.txt /disk2 -> copia todos os arquivos com extensão txt para o diretório /disk2.
+
+outro exemplo:
+    cp ./a* /disk2/ -> quando já se está no diretório de origin do arquivo, se coloca apenas o ./  e o filtro, nesse exemplo o filtro é colocar todos os arquivos que iniciam com a letra "a"(copiar) para o diretório disk2.
+
+obs: Se houver arquivos com mesmo nome no destino, ele vai sobrepor, então é necessário prestar bastante atenção nesse tipo de situação.
+
+-i -> esse flag pergunta se você quer realmente sobrescrever um arquivo, nesse caso em forma de prompt;
+-r -> para copiar recursivamente;
+
+exemplo com para exibir o que vem sendo feito após a cópia:
+cp /home/vinicius/* /disk2/ -r -v -> nesse exemplo após a cópia é exibido o que vem sendo feito a cada comando;
+
+Renomeando e movendo arquivos:
+ mv -> comando para mover arquivos.
+exemplo: mv /home/vinicius/nome-do-arquivo.txt /disk2/ -> nesse exemplo estamos movendo um arquivo que está numa pasta para outra;
+
+observação: o comando recursivo -r -> não está presente no comando mv;
+mas utiliza o modo -i e -v;
+
+mv banco-de-dados.txt banco-de-dados.txt -> usa-se o comando mv também para alterar o nome do arquivo, mas com uma sintaxe diferente, colocando o nome do arquivo duas vezes;
+
+Iniciando, visualizando  e encerrando o processo;   
+ps -> mostra os processos em execução no ambiente gráfico, e somente do usuário atual, ou seja não mostra dos outros usuários;
+ps a -> mostra os processos de todos os usuários daquela máquina;
+ps u-> mostra os processos e o nome do usuário e a hora que o usuário iniciou o processo;
+ps x -> mostra os processos que foram executados fora do console;
+
+ps aux -> mostra os processos e o que diz cada parametro acima;
+kill -> comando para encerrar um processo;
+killall "nome-do-processo" -> nesse caso ele mata o todos processos, feitos pelo nome citado no comando;
+who -a -> mostra o PID dos usuários;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

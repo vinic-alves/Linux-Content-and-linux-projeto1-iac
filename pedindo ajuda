@@ -1,0 +1,9 @@
+A maioria dos comandos para se saber mais sobre, e ter ajuda de qual comando utilizar, pode se utilizar o --help: exemplo :
+ls --help -> mostra os comandos (combinações disponíveis no comando ls);
+ls -l -> mostra uma lista detalhada com mais informações sobre os arquivos:
+se iniciar com d é um diretório(pasta), se iniciar com - é um arquivo, se iniciar com l é um link/atalho
+ls -lh -> lista de uma maneira mais legível;
+-v -> adicionado na flag mostra a ação que acabou de acontecer;
+-i -> mostra um prompt de confirmação antes de deletar um arquivo;
+man -> comando utilizando antes outro para pedir ajuda ou um manual do próximo comando exemplo "man ls"
+

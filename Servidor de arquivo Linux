@@ -1,0 +1,7 @@
+Para fazer o compartilhamento de arquivos para o servidor o windows utiliza o protocolo SMB, para se fazer esse tipo de compartilhamento utilizando o sistema linux, se usa uma aplicação chamada SAMBA;
+
+daemon -> significa serviços de segundo plano;
+systemctl restart smbd -> para reiniciar o samba; 
+systemctl status smbd -> verifica o status do samba;
+systemctl enable smbd-> mantem o samba ativo; 
+\\endereço-de-ip\pasta -> exemplo de endereço de rede 
